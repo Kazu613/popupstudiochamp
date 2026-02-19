@@ -39,8 +39,22 @@
             margin: 0 auto;
         }
     </style>
-</head>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const studioLink = document.querySelector('.studio a');
+            const classroomLink = document.querySelector('.classroom a');
 
+            studioLink.addEventListener('click', function(event) {
+                event.preventDefault();
+                window.location.href = "index2.html";
+            });
+
+            classroomLink.addEventListener('click', function(event) {
+                event.preventDefault();
+                window.location.href = "index2.html";
+            });
+        });
+    </script>
 <body>
     <h1 class="title">Popup Studio <br>予約システム</h1>
 
